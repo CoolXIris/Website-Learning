@@ -1,0 +1,164 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/background.jpg"); /* Ganti dengan nama file gambar Anda */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-icon,
+.more-icon {
+  font-size: 24px;
+}
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.7); /* Transparan putih */
+  backdrop-filter: blur(10px); /* Efek blur */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Mengisi seluruh tinggi laman */
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.7); /* Transparan putih */
+  backdrop-filter: blur(10px); /* Efek blur */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 20px; /* Mengisi seluruh tinggi laman */
+  flex: 1;
+}
+
+/* Tambahkan atau ubah bagian ini di CSS */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-english,
+.split-content .left-content {
+  margin-right: 20px;
+}
+
+.content-translation,
+.split-content .right-content {
+  margin-left: 20px;
+}
+
+.slide #slide1 .content ul {
+  background-color: #f8f9fa; /* Warna latar belakang */
+  padding: 15px;
+  border-radius: 8px; /* Border radius untuk membuat sudut bulat */
+  border: 1px solid #260ccb; /* Warna border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.slide #slide1 .content ul li {
+  list-style: none;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.slide #slide3 .content-wrapper {
+  justify-content: space-between;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.slide #slide5 .content .video-container {
+  justify-content: center;
+  margin-top: 20px; /* Jarak antara judul dan video */
+}
+
+.arrow-btns {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.arrow-left,
+.arrow-right {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  color: #007bff;
+}
+
+/* Tambahkan atau ubah bagian ini di CSS */
+.menu {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.menu.show-menu {
+  display: flex;
+}
+
+.menu-content {
+  padding: 10px;
+}
+
+.menu-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #007bff;
+}
